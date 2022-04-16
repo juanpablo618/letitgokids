@@ -1,0 +1,153 @@
+<?php
+/**
+ * Archivo de lenguaje de la clase Cproduct.php
+ *
+ * @package EVOIT
+ * @author {@link http://www.evoit.com/ EVO I.T.}
+ * @copyright {@link http://www.evoit.com/ EVO I.T.}
+ * @version v4.4:28-05-2020
+ */
+define('CPRODUCT_SETID_REQUIRED_VALUE', 'Ingrese el valor &quot;ID&quot;');
+define('CPRODUCT_SETID_VALIDATE_VALUE', 'El valor &quot;ID&quot; es incorrecto');
+define('CPRODUCT_SETNAME_REQUIRED_VALUE', 'Ingrese el valor &quot;Nombre&quot;');
+define('CPRODUCT_SETID_PROVIDER_REQUIRED_VALUE', 'Ingrese el valor &quot;Proveedor&quot;');
+define('CPRODUCT_SETID_PROVIDER_VALIDATE_VALUE', 'El valor &quot;Proveedor&quot; es incorrecto');
+define('CPRODUCT_SETDATE_ADDED_REQUIRED_VALUE', 'Ingrese el valor &quot;Alta&quot;');
+define('CPRODUCT_SETDATE_ADDED_VALIDATE_VALUE', 'El valor &quot;Alta&quot; es incorrecto');
+define('CPRODUCT_SETDATE_ADDED_ERROR', 'Se produjo un error en el campo &quot;Alta&quot;');
+define('CPRODUCT_SETSTATUS_REQUIRED_VALUE', 'Ingrese el valor &quot;Estado&quot;');
+define('CPRODUCT_SETID_CATEGORY_VALIDATE_VALUE', 'El valor &quot;Categor&iacute;a&quot; es incorrecto');
+define('CPRODUCT_SETLIST_PRICE_REQUIRED_VALUE', 'Ingrese el valor &quot;Precio de Lista&quot;');
+define('CPRODUCT_SETLIST_PRICE_VALIDATE_VALUE', 'El valor &quot;Precio de Lista&quot; es incorrecto');
+define('CPRODUCT_SETSALE_PRICE_REQUIRED_VALUE', 'Ingrese el valor &quot;Precio de Vta.&quot;');
+define('CPRODUCT_SETSALE_PRICE_VALIDATE_VALUE', 'El valor &quot;Precio de Vta.&quot; es incorrecto');
+define('CPRODUCT_SETID_USER_ADD_REQUIRED_VALUE', 'Ingrese el valor &quot;Usuario&quot;');
+define('CPRODUCT_SETID_USER_ADD_VALIDATE_VALUE', 'El valor &quot;Usuario&quot; es incorrecto');
+define('CPRODUCT_SETDATE_SOLD_VALIDATE_VALUE', 'El valor &quot;Vendido&quot; es incorrecto');
+define('CPRODUCT_SETDATE_SOLD_ERROR', 'Se produjo un error en el campo &quot;Vendido&quot;');
+define('CPRODUCT_SETDATE_CHANGE_STATUS_VALIDATE_VALUE', 'El valor &quot;Cambio Estado&quot; es incorrecto');
+define('CPRODUCT_SETDATE_CHANGE_STATUS_ERROR', 'Se produjo un error en el campo &quot;Cambio Estado&quot;');
+define('CPRODUCT_GET_VALUES_STATUS_VALUE_1', 'Exhibido');
+define('CPRODUCT_GET_VALUES_STATUS_VALUE_2', 'Vendido');
+define('CPRODUCT_GET_VALUES_STATUS_VALUE_3', 'Para Devolver');
+define('CPRODUCT_GET_VALUES_STATUS_VALUE_4', 'Devuelto');
+define('CPRODUCT_GET_VALUES_STATUS_VALUE_5', 'Para Pagar');
+define('CPRODUCT_GET_VALUES_STATUS_VALUE_6', 'Pagado');
+define('CPRODUCT_GET_VALUES_STATUS_VALUE_7', 'Donado');
+define('CPRODUCT_ADD_ERROR', 'No se pudo insertar el registro');
+define('CPRODUCT_UPDATE_ERROR', 'No se pudo actualizar el registro');
+define('CPRODUCT_UPDATE_REQUIRED_PK', 'No est&aacute; definido el identificador del registro que se quiere actualizar');
+define('CPRODUCT_DEL_ERROR', 'No se pudo eliminar el registro');
+define('CPRODUCT_DEL_REQUIRED_PK', 'No est&aacute; definido el identificador del registro que se quiere eliminar');
+define('CPRODUCT_GETDATA_ERROR', 'No se pudo obtener el registro');
+define('CPRODUCT_GETDATA_REQUIRED_PK', 'No est&aacute; definido el identificador del registro que se quiere obtener');
+define('CPRODUCT_GETLIST_ERROR', 'No se pudo realizar la consulta');
+define('CPRODUCT_GETLIST_TOTAL_LIST_ERROR', 'No se pudo obtener el n&uacute;mero total de registros de la consulta');
+define('CPRODUCT_EXIST_CODE_EXIST', 'El valor &quot;C&oacute;digo&quot; ingresado ya existe');
+define('CPRODUCT_EXIST_CODE_ERROR', 'No se pudo verificar la existencia del valor &quot;C&oacute;digo&quot; ingresado');
+define('CPRODUCT_EXIST_GROUP_EXIST', 'El valor del grupo [Nombre - Proveedor] ingresado ya existe');
+define('CPRODUCT_EXIST_GROUP_ERROR', 'No se pudo verificar la existencia del valor del grupo [Nombre - Proveedor] ingresado');
+define('CPRODUCT_CAN_DELETE_ERROR', 'No se pudo verificar si se puede eliminar el registro');
+define('CPRODUCT_CAN_DELETE_CANT_DETAIL', 'El registro no se pudo eliminar porque est&aacute; relacionado con uno o m&aacute;s registros de la tabla &quot;detail&quot;');
+define('CPRODUCT_CAN_DELETE_REQUIRED_PK', 'No est&aacute; definido el identificador del registro');
+define('CPRODUCT_GET_LAST_ID_ERROR', 'No se pudo obtener el &uacute;ltimo identificador');
+define('CPRODUCT_ADD_FORM_OK', 'El producto fue insertado correctamente con el ID:');
+define('CPRODUCT_ADD_FORM_OK_BTN', 'Continuar');
+define('CPRODUCT_ADD_FORM_NEW_BTN', 'Agregar uno nuevo');
+define('CPRODUCT_ADD_FORM_BACK_BTN', 'Volver');
+define('CPRODUCT_ADD_FORM_LABEL_FIELD_NAME', 'Nombre');
+define('CPRODUCT_ADD_FORM_LABEL_FIELD_DESCRIPTION', 'Observaciones');
+define('CPRODUCT_ADD_FORM_LABEL_FIELD_ID_PROVIDER', 'Proveedor');
+define('CPRODUCT_ADD_FORM_LABEL_FIELD_STATUS', 'Estado');
+define('CPRODUCT_ADD_FORM_LABEL_FIELD_ID_CATEGORY', 'Categor&iacute;a');
+define('CPRODUCT_ADD_FORM_LABEL_FIELD_LIST_PRICE', 'Precio de Lista');
+define('CPRODUCT_ADD_FORM_LABEL_FIELD_SALE_PRICE', 'Precio de Vta.');
+define('CPRODUCT_ADD_FORM_LABEL_FIELD_ID_USER_ADD', 'Usuario');
+define('CPRODUCT_ADD_FORM_LABEL_FIELD_CODE', 'C&oacute;digo');
+define('CPRODUCT_ADD_FORM_LABEL_FIELD_DATE_SOLD', 'Vendido');
+define('CPRODUCT_ADD_FORM_LABEL_FIELD_DATE_CHANGE_STATUS', 'Cambio Estado');
+define('CPRODUCT_ADD_FORM_SUBMIT_BTN', 'Aceptar');
+define('CPRODUCT_ADD_FORM_CANCEL_BTN', 'Cancelar');
+define('CPRODUCT_ADD_FORM_LABEL_REQUIRED', 'Requeridos');
+define('CPRODUCT_UPDATE_FORM_OK', 'El registro fue actualizado correctamente');
+define('CPRODUCT_UPDATE_FORM_OK_BTN', 'Continuar');
+define('CPRODUCT_UPDATE_FORM_BACK_BTN', 'Volver');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_ID', 'ID');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_NAME', 'Nombre');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_DESCRIPTION', 'Observaciones');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_ID_PROVIDER', 'Proveedor');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_DATE_ADDED', 'Alta');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_STATUS', 'Estado');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_ID_CATEGORY', 'Categor&iacute;a');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_LIST_PRICE', 'Precio de Lista');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_SALE_PRICE', 'Precio de Vta.');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_ID_USER_ADD', 'Usuario');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_CODE', 'C&oacute;digo');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_DATE_SOLD', 'Vendido');
+define('CPRODUCT_UPDATE_FORM_LABEL_FIELD_DATE_CHANGE_STATUS', 'Cambio Estado');
+define('CPRODUCT_UPDATE_FORM_SUBMIT_BTN', 'Aceptar');
+define('CPRODUCT_UPDATE_FORM_CANCEL_BTN', 'Cancelar');
+define('CPRODUCT_UPDATE_FORM_LABEL_REQUIRED', 'Requeridos');
+define('CPRODUCT_DEL_FORM_OK', 'El registro fue eliminado correctamente');
+define('CPRODUCT_DEL_FORM_OK_BTN', 'Continuar');
+define('CPRODUCT_DEL_FORM_BACK_BTN', 'Volver');
+define('CPRODUCT_DEL_GROUP_FORM_REQUIRED_PK', 'Debe seleccionar uno a m&aacute;s registros para eliminar');
+define('CPRODUCT_DEL_GROUP_FORM_OK', 'Los registros fueron eliminados correctamente');
+define('CPRODUCT_DEL_GROUP_FORM_OK_BTN', 'Continuar');
+define('CPRODUCT_DEL_GROUP_FORM_CANT_DELETE_ALL', 'Algunos registros no fueron eliminados');
+define('CPRODUCT_DEL_GROUP_FORM_BACK_BTN', 'Volver');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_ID', 'ID');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_NAME', 'Prenda');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_DESCRIPTION', 'Observaciones');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_ID_PROVIDER', 'Proveedor');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_DATE_ADDED', 'Fecha de Alta');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_STATUS', 'Estado');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_ID_CATEGORY', 'Categor&iacute;a');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_LIST_PRICE', 'Precio de Venta');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_SALE_PRICE', 'Precio de Vta.');//No se usa más
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_ID_USER_ADD', 'Usuario');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_CODE', 'C&oacute;digo');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_DATE_SOLD', 'Vendido');
+define('CPRODUCT_SHOW_DATA_LABEL_FIELD_DATE_CHANGE_STATUS', 'Cambio Estado');
+define('CPRODUCT_SHOW_DATA_BACK_BTN', 'Volver');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_ID', 'ID');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_NAME', 'Nombre');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_DESCRIPTION', 'Observaciones');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_ID_PROVIDER', 'Proveedor');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_DATE_ADDED', 'Alta');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_STATUS', 'Estado');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_ID_CATEGORY', 'Categor&iacute;a');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_LIST_PRICE', 'Precio de Lista');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_SALE_PRICE', 'Precio de Vta.');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_ID_USER_ADD', 'Usuario');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_CODE', 'C&oacute;digo');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_DATE_SOLD', 'Vendido');
+define('CPRODUCT_SEARCH_FORM_LABEL_FIELD_DATE_CHANGE_STATUS', 'Cambio Estado');
+define('CPRODUCT_SEARCH_FORM_SUBMIT_BTN', 'Buscar');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_ID', 'C&oacute;digo');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_NAME', 'Prenda');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_DESCRIPTION', 'Observaciones');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_ID_PROVIDER', 'Proveedor');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_ID_CLIENT', 'Cliente');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_DATE_ADDED', 'Alta');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_STATUS', 'Estado');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_ID_CATEGORY', 'Categor&iacute;a');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_LIST_PRICE', 'Precio de Venta');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_SALE_PRICE', 'Precio de Vta.');//No se usa más
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_ID_USER_ADD', 'Usuario');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_CODE', 'C&oacute;digo');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_DATE_SOLD', 'Vendido');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_DATE_CHANGE_STATUS', 'Cambio Estado');
+define('CPRODUCT_SHOW_QUERY_HEAD_FIELD_SALE_INFO_AMOUNT', 'Monto');
+define('CPRODUCT_SHOW_QUERY_NOT_FOUND', 'No se encontraron registros');
+define('CPRODUCT_SHOW_QUERY_SELECT_ALL', 'Seleccionar todos');
+define('CPRODUCT_SHOW_PROVIDER_PRODUCT_TABLE_NOT_PROVIDER_PRODUCT_TO_BACK', 'Este proveedor no tiene productos cargados para devolver');
+define('CPRODUCT_SHOW_PROVIDER_PRODUCT_TABLE_NOT_PROVIDER_PRODUCT_TO_PAY', 'Este proveedor no tiene productos cargados para pagar');
+define('CPRODUCT_SHOW_PROVIDER_PRODUCT_TABLE_SELECT_ALL', 'Seleccionar todos');
+define('CPRODUCT_PSEUDOANALYTICS_SELECT_ONE', 'Seleccione un proveedor');
+define('CPRODUCT_SHOW_PROVIDER_STATUS_REQUIRED_ID_PROVIDER', 'No est&aacute; definido el identificador del proveedor/cliente se quiere obtener');
+define('CPRODUCT_SHOW_PROVIDER_STATUS_ERROR', 'No se pudo obtener los registros del proveedor/cliente');
+
+define('CPRODUCT_SHOW_SALE_PRODUCT_TABLE_NO_ID', 'No se pudo obtener los registros de la venta');
+
+?>
