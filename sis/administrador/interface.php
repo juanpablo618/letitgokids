@@ -215,10 +215,6 @@ function close()
             </div>
         </div>
         <footer>
-            <div class="wrapper">
-				<a href="http://evoit.com/" target="_blank" class="logo" title="EVO I.T."><img src="img/logo-evoit.png" alt="EVO I.T." /></a>
-                <a href="http://evoit.com/" target="_blank" title="EVO I.T.">&copy; 2004-<?php echo date('Y'); ?> EVO I.T.</a>
-			</div>
         </footer>
     </div>
 	<?php

@@ -25,7 +25,7 @@ doctype();
 open(FALSE, 'main');
 ?>
     <div id="welcome">
-		<img src="<?php echo ADMIN_URL; ?>img/logo-lg.png" />
+
     	<div id="main-text">
         	<div>La moda sustentable</div>
         	<div>no es tendencia es el futuro.</div>

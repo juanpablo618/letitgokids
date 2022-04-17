@@ -52,11 +52,11 @@ body{
 }
 header{
     height: 100px;
-	background-color: #FFCB29;
+	background-color: #036992;
 }
 nav{
 	height: 45px;
-	background-color: #FFCB29;
+	background-color: #f4b2af;
 }
 #content{
     padding-top: 30px;
@@ -69,7 +69,7 @@ footer{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #ffcb03;
+    background-color: #036992;
 }
 .wrapper{
     max-width: 1476px;
@@ -783,7 +783,7 @@ a.ui-button:active,
 	color: #FFF;
 }
 .ui-tabs-tab{
-    background-color: #FFCB29 !important;
+    background-color: #036992 !important;
 }
 .ui-tabs-tab a{
     color: #FFFFFF !important;

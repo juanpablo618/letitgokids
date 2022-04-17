@@ -145,7 +145,7 @@ define('CUSER_SENDEMAIL_SUBJECT', 'Contacto desde DESMADRE.');
 define('CUSER_SENDEMAIL_SETEMAIL_VALIDATE_VALUE', 'Debe ingresar el valor Email.');
 define('CUSER_SENDEMAIL_SETEMAIL_NOT_SENT', 'No se pudo enviar el email.');
 define('CUSER_SENDEMAIL_TEXT_BODY', 'Estimada #userName#'."\n\r\n\r".'
-Hola! Abajo están los datos que necesitas para acceder al sistema de Desmadre. Allí podrás ver  el estado de tu cuenta con información actualizada de tus productos. Recordá que los días 10 de cada mes rendimos lo que se haya vendido el mes anterior.'."\n\r".'
+Hola! Abajo están los datos que necesitas para acceder al sistema de letitgo.kids . Allí podrás ver  el estado de tu cuenta con información actualizada de tus productos. Recordá que los días 10 de cada mes rendimos lo que se haya vendido el mes anterior.'."\n\r".'
 URL: #siteURL#'."\n\r".'
 Usuario: #userUser#'."\n\r".'
 Contraseña: #userPass#'."\n\r\n\r".'
