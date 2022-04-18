@@ -42,7 +42,7 @@ body{
 	position: relative;
 }
 .main{
-	background: url(../img/bg-main.png) no-repeat top center #FDEFC9;
+	background: url(../img/bg-main.png) no-repeat top center #016890;
 }
 .main #content{
 	height: 100%;
@@ -433,8 +433,8 @@ footer a.logo{
 }
 #welcome #main-text div{
     font-family: Minute;
-    font-size: 25px;
-    color: #0F4C53;
+    font-size: 40px;
+    color: #FBFBFB;
 }
 #menu .sep{
     border-top: 1px solid #CCC;
