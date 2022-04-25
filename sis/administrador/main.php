@@ -28,8 +28,8 @@ open(FALSE, 'main');
 
     	<div id="main-text">
         	<div>La moda sustentable</div>
-        	<div>no es tendencia es el futuro.</div>
-        	<div>Alarga la vida de tus prendas...</div>
+        	<div>no es tendencia, es el futuro.</div>
+        	<div>Alargá la vida de tus prendas...</div>
     	</div>
     </div>
 <?php
