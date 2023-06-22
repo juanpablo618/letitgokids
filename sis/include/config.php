@@ -235,7 +235,7 @@ define('PRODUCT_TEMP_THUMBS_WIDTH', 160);
 define('CASH_COMMISSION', 0.5);
 
 //Comisión en cta cte
-define('CURRENT_ACCOUNT_COMMISSION', 0.7);
+define('CURRENT_ACCOUNT_COMMISSION', 0.5);
 
 //Cantidad de días para devolver
 define('AMOUNT_DAYS_TO_GIVE_BACK', 15);

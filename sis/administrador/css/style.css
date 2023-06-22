@@ -841,7 +841,7 @@ a.ui-button:active,
 }
 @media screen and (max-width: 1004px){
 	.main{
-		background: url(../img/bg-main-responsive.png) no-repeat center center #FDEFC9;
+		background:  #076991;
 		background-size: contain;
 	}
 }
