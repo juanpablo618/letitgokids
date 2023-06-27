@@ -4053,13 +4053,13 @@ class Cuser extends Cbase
 
 		$mail = new PHPMailer();  
 		   $mail->IsSMTP();
-   $mail->Host = 'mail.letitgokids.com';
+   $mail->Host = 'c2331324.ferozo.com';
    $mail->Port = 465;
    $mail->SMTPSecure = 'ssl';
    $mail->SMTPAuth = true;
-   $mail->Username = "manialiaga@letitgokids.com";
-   $mail->Password = "Bas61814319";
-   $mail->setFrom('manialiaga@letitgokids.com', 'Letitgo');  //add sender email 
+   $mail->Username = "manialiaga@letitgo-modacircular.com";
+   $mail->Password = "letitGO0618*";
+   $mail->setFrom('manialiaga@letitgo-modacircular.com', 'Letitgo');  //add sender email 
    $mail->addAddress($this->getEmail(FALSE));  //Set who the
       $mail->Subject = $response->subject;
 

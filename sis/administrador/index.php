@@ -36,7 +36,9 @@ if ($_POST['login'] == 'login')
 	    $log->setAction('login');
 	    $log->add();
 
-	    header('location: main.php');
+	    //header('location: main.php');
+		echo '<script>window.location.href = "main.php";</script>';
+
 	    exit;
 	}
 	else

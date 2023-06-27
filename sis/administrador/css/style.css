@@ -41,9 +41,7 @@ body{
 	min-height: 100%;
 	position: relative;
 }
-.main{
-	background: url(../img/bg-main.png) no-repeat top center #016890;
-}
+
 .main #content{
 	height: 100%;
 	overflow: hidden;
@@ -434,7 +432,7 @@ footer a.logo{
 #welcome #main-text div{
     font-family: Minute;
     font-size: 40px;
-    color: #FBFBFB;
+    color: black;
 }
 #menu .sep{
     border-top: 1px solid #CCC;
@@ -1016,4 +1014,7 @@ a.ui-button:active,
     footer a.logo{
         margin-left: 15px;
     }
+}
+.logo {
+    width: 82px;
 }

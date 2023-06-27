@@ -182,7 +182,7 @@ function open($login = FALSE, $boddyClass = '')
 			<div class="wrapper">
 				<div id="client">
 					<div id="client-left" class="left"></div>
-					<div id="client-name" class="left"><img src="<?php echo ADMIN_URL; ?>img/logo.png" /></div>
+					<div id="client-name" class="left"><img class="logo" src="<?php echo ADMIN_URL; ?>img/logo.png" /></div>
 					<div id="client-right" class="left"></div>
 				</div>
                 <?php if ($login !== TRUE) : ?>

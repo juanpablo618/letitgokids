@@ -30,17 +30,17 @@ define('DB_HOST', 'localhost');
 /**
  * Usuario
  */
-define('DB_NAME', 'letitgok_juancuello');
+define('DB_NAME', 'c2331324_letitgo');
 
 /**
  * Contraseña
  */
-define('DB_PASS', 'Bas61814319');
+define('DB_PASS', '86viZOdiba');
 
 /**
  * Nombre de la base de datos
  */
-define('DB_DBASE', 'letitgok_desmadre_sistema');
+define('DB_DBASE', 'c2331324_letitgo');
 /**
  * Modo debug
  */
@@ -89,7 +89,7 @@ define('SITE_PATH', preg_replace('/include/', '', dirname(__FILE__)));
 /**
  * URL del sitio
  */
-define('SITE_URL', 'http://letitgokids.com/sis/');
+define('SITE_URL', 'http://letitgo-modacircular.com/sis/');
 
 
 /**
@@ -159,27 +159,27 @@ define('CONTACT_NAME', 'letitgok');
 /**
  * Email bajo el cual se hace el envío del email de contacto
  */
-define('CONTACT_EMAIL', 'letitgok@letitgokids.com');
+define('CONTACT_EMAIL', 'manialiaga@letitgo-modacircular.com');
 /**
  * Email que realiza el envío de email de contacto
  */
-define('CONTACT_SENDER', 'manialiaga@gmail.com');
+define('CONTACT_SENDER', 'manialiaga@letitgo-modacircular.com');
 /**
  * Host SMTP
  */
-define('CONTACT_SMTP_HOST', 'mail.letitgokids.com');
+define('CONTACT_SMTP_HOST', 'c2331324.ferozo.com');
 /**
  * User SMTP
  */
-define('CONTACT_SMTP_USER', 'manialiaga@letitgokids.com');
+define('CONTACT_SMTP_USER', 'manialiaga@letitgo-modacircular.com');
 /**
  * Password SMTP
  */
-define('CONTACT_SMTP_PASS', 'Bas61814319');
+define('CONTACT_SMTP_PASS', 'letitGO0618*');
 /**
  * Port SMTP
  */
-define('CONTACT_SMTP_PORT', '995');
+define('CONTACT_SMTP_PORT', '465');
 /**#@-*/
 
 /**#@+

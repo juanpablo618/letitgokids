@@ -4,7 +4,7 @@ define('IS_TEST', FALSE); //Si estoy en prducción (IS_LOCALHOST == FALSE), esto
 
 if(IS_LOCALHOST == TRUE)
 {
-    $pathToSite = 'D:\\AppServ\\www\\letitgokids.com\\sis\\'; //Locahost
+    $pathToSite = 'D:\\AppServ\\www\\letitgo-modacircular.com\\sis\\'; //Locahost
 }
 else
 {
@@ -120,7 +120,7 @@ if($cron->setDateAdded(date(FORMAT_DATE), FALSE) == TRUE and $cron->existCron() 
                 $mail->Username = CONTACT_SMTP_USER;
                 $mail->Password = CONTACT_SMTP_PASS;
                 $mail->Port     = CONTACT_SMTP_PORT;
-                $mail->SMTPDebug = FALSE;
+                $mail->SMTPDebug = TRUE;
 
 
                 //Agrego las imganes adjuntas
